@@ -79,7 +79,7 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .hero-promise { font-size: 1.14rem; line-height: 1.55; max-width: 33rem; font-weight: 500; }
 .hero-description { max-width: 32rem; color: var(--muted); margin-top: 1rem; }
 .hero-copy .button-row { margin-top: 1.9rem; }
-.hero-visual { position: relative; padding: .8rem .75rem 3.2rem 1.4rem; }
+.hero-visual { position: relative; padding: .8rem .75rem 0 1.4rem; }
 .photo-frame { background: var(--sage-light); border: 1px solid var(--line); border-radius: 12px; min-height: 420px; display: flex; overflow: hidden; }
 .photo-frame img { width: 100%; object-fit: cover; }
 .photo-placeholder { width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.5rem 2rem; text-align: center; }
@@ -89,7 +89,7 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .placeholder-note { font-size: .9rem; max-width: 14rem; color: var(--muted); margin-top: .7rem; }
 .placeholder-status { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; margin-top: 2.4rem; color: var(--muted); }
 .photo-tab { position: absolute; top: .1rem; right: -.3rem; z-index: 1; transform: rotate(6deg); background: var(--sunflower); color: var(--ink); padding: .65rem 1rem; font-size: .8rem; border: 1px solid #d0a93e; border-radius: 4px; }
-.quote-note { position: absolute; left: -.7rem; bottom: 0; width: 285px; padding: 1.35rem 1.6rem; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 10px 22px #3823340b; transform: rotate(-4deg); }
+.quote-note { width: min(285px, 100%); margin-top: 1.75rem; padding: 1.35rem 1.6rem; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 10px 22px #3823340b; transform: rotate(-4deg); }
 .quote-mark { color: var(--clay); font: 3rem/.5 var(--heading); display: block; margin-top: .4rem; }
 .quote-note p { font: 400 1.6rem/1.2 var(--heading); margin-top: .6rem; }
 .quote-note > span:last-child { display: block; color: var(--muted); font-size: .78rem; line-height: 1.5; margin-top: .65rem; }
@@ -259,10 +259,10 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
   .hero-promise { font-size: 1.1rem; }
   .hero-description { font-size: .96rem; }
   .hero-copy .button-row { align-items: stretch; }
-  .hero-visual { width: 100%; max-width: 420px; margin-inline: auto; padding-bottom: 4rem; }
+  .hero-visual { width: 100%; max-width: 420px; margin-inline: auto; }
   .hero-photo { height: 380px; min-height: 380px; }
   .photo-tab { right: 0; }
-  .quote-note { left: 0; width: min(280px, 85%); }
+  .quote-note { width: min(280px, 100%); }
   .stats-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
   .stats-inner strong { font-size: 1.55rem; }
   .stats-inner span { font-size: .78rem; }

@@ -2,6 +2,8 @@
 
 The library-program website and protected editor were published as Sites version 3 from source commit `d3eb05abf2ce7e5178a19b867c513da2d4c3c69a`.
 
+The home-page quote card was moved below the photo in Sites version 4, from source commit `6dce02d9fc81579a6e4214660fe38371fb2311bb`. The build passed. Local and production browser checks at 320px, 390px, 768px, and 1280px confirmed a clear gap between the photo and card with no horizontal overflow. The existing uploaded photo loaded successfully in production.
+
 ## Checks completed
 
 - `npm test`: seven policy tests passed for authorized editors, same-origin writes, validated fields and links, actual image signatures, request-size limits, and immutable default content.
